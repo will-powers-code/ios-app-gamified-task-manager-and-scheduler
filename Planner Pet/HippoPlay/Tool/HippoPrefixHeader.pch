@@ -1,0 +1,50 @@
+//
+//  HippoPrefixHeader.pch
+//  HippoPlay
+//
+//  Created by Wenyin Zheng on 2019/4/12.
+//  Copyright © 2019 Wenyin Zheng. All rights reserved.
+//
+
+#ifndef HippoPrefixHeader_pch
+#define HippoPrefixHeader_pch
+
+#import "Masonry.h"
+#import "HippoToolManager.h"
+#import "GCD.h"
+#import "AppDelegate.h"
+#import "JSUserDefaultTool.h"
+#import "SVProgressHUD.h"
+
+#define STSizeWithWidth(x)  (x * kScreenWidth / 750.0)
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define STColorWithHex(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define CurrentAppDelegate   ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+
+#define HippoExpTime 60
+
+#define HippoCleanTime 10
+
+#define HippoMoodTime 30
+
+#define HippoShitNumer 3
+
+#define HippoDownTime 60
+
+#define HippoRedLine 0.4
+
+#define HippoShitTime 60 * 10 //拉屎时间间隔  单位s
+
+
+#define HippoUnit 0.02 //各个进度条都是以1为单位，这里设置为0.02，也就是1/0.02 = 50点
+
+   
+
+
+#endif /* HippoPrefixHeader_pch */
